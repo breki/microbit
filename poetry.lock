@@ -1,0 +1,74 @@
+[[package]]
+name = "microfs"
+version = "1.4.5"
+description = "A module and utility to work with the simple filesystem on the BBC micro:bit"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyserial = ">=3.0.1,<4.0"
+
+[[package]]
+name = "pseudo-microbit"
+version = "1.10"
+description = "API to be used with PyCharm for micro:bit python development"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+microfs = "*"
+pyminifier = "*"
+uflash = "*"
+
+[[package]]
+name = "pyminifier"
+version = "2.1"
+description = "Python code minifier, obfuscator, and compressor"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyserial"
+version = "3.5"
+description = "Python Serial Port Extension"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+cp2110 = ["hidapi"]
+
+[[package]]
+name = "uflash"
+version = "2.0.0"
+description = "A module and utility to flash Python onto the BBC micro:bit."
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "378067a10253ed6a9e562c820ee581d64a21239217dc10682da10500814d6b27"
+
+[metadata.files]
+microfs = [
+    {file = "microfs-1.4.5.tar.gz", hash = "sha256:ea7e6ca5c1ed61ac4a60fa2a1552e390501f54bcf5051cdcd788a988f00b017c"},
+]
+pseudo-microbit = [
+    {file = "pseudo-microbit-1.10.tar.gz", hash = "sha256:66d94c707427117d477f6e44a2e917d7c4055adabb6851becf43fd07c7668c77"},
+    {file = "pseudo_microbit-1.10-py2.py3-none-any.whl", hash = "sha256:b80f39dd6afaae2ad333c6940a6ac28e9fcc2d112fe2d535c6765b4a231cb6e5"},
+]
+pyminifier = [
+    {file = "pyminifier-2.1.tar.gz", hash = "sha256:e192618fe901830e9298825b32828bc9555ae8649e05af37bfab2db328546777"},
+]
+pyserial = [
+    {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
+    {file = "pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"},
+]
+uflash = [
+    {file = "uflash-2.0.0.tar.gz", hash = "sha256:f583d2264fcf37e3e358f1f3a4370ce43b24eb3fdf845a477202555235b52582"},
+]

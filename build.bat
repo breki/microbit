@@ -1,0 +1,1 @@
+poetry run _build.bat %~1
